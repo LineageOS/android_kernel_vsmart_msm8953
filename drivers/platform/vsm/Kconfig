@@ -1,0 +1,11 @@
+menu "Vsmart drivers"
+
+config MACH_VSMART
+	tristate "Vsmart devinfo driver"
+	default n
+	help
+	  Say Y here if you want to use Vsmart devinfo drivers.
+
+	  If unsure, say N.
+
+endmenu

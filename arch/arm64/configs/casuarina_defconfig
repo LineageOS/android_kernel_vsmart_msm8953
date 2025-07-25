@@ -360,6 +360,7 @@ CONFIG_FREEZER=y
 #
 # Platform selection
 #
+CONFIG_MACH_VSMART=y
 # CONFIG_ARCH_SUNXI is not set
 # CONFIG_ARCH_ALPINE is not set
 # CONFIG_ARCH_BCM2835 is not set

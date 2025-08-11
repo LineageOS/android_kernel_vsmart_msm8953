@@ -1462,6 +1462,17 @@ config CASUARINA_TOUCHSCREEN_CHIPONE
           To compile this dirver as a module, choose M here: the
           module will be called.
 
+config CASUARINA_TOUCHSCREEN_FTS
+	bool "FT8006P for qcom touchpanel package"
+	default I2C
+	help
+	  Say Y here if you have a FT8006P touchscreen.
+	  If unsure, say N.
+
+	  To compile this dirver as a module, choose M here: the
+	  module will be called.
+
 source "drivers/input/touchscreen/chipone-tddi/Kconfig"
+source "drivers/input/touchscreen/focaltech_touch_ft8006p/Kconfig"
 
 endif

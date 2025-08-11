@@ -1449,7 +1449,19 @@ config TOUCHSCREEN_RAYDIUM_CHIPSET
 	depends on I2C
 	help
 	  Say Y here if you have a Raydium WT030 CHIPSET touchscreen.
-
+	
 	  If unsure, say N.
+
+config CASUARINA_TOUCHSCREEN_CHIPONE
+        bool "Chipone for qcom touchpanel package"
+        default I2C
+        help
+          Say Y here if you have a Chipone touchscreen.
+          If unsure, say N.
+
+          To compile this dirver as a module, choose M here: the
+          module will be called.
+
+source "drivers/input/touchscreen/chipone-tddi/Kconfig"
 
 endif

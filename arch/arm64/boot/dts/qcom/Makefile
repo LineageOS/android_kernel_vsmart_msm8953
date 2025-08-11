@@ -676,6 +676,13 @@ endif
 dtb-$(CONFIG_ARCH_SDM845_VM) += sdm845-vm.dtb
 endif
 
+ifeq ($(CONFIG_BUILD_ARM64_DT_OVERLAY),y)
+dtbo-$(CONFIG_ARCH_SDM632) += casuarina-qrd-sku4-overlay.dtbo
+casuarina-qrd-sku4-overlay.dtbo-base := sdm632-casuarina.dtb
+endif
+
+dtb-$(CONFIG_ARCH_SDM632) += sdm632-casuarina.dtb
+
 always		:= $(dtb-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb

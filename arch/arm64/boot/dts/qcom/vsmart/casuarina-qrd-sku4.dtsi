@@ -274,7 +274,7 @@
 
 &pmi632_vadc {
 	chan@2a {
-		qcom,scale-function = <27>;
+		qcom,scale-function = <22>;
 	};
 };
 
